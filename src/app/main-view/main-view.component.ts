@@ -86,7 +86,7 @@ export class MainViewComponent implements OnInit {
           if(webMovie.Title){
             Swal({
               type: 'error',
-              title: 'That title already exist on the internet!',
+              title: 'That title already exists on the internet!',
               text: 'Create another title',
             })
             this.duplicateTitle=true;
@@ -121,7 +121,7 @@ export class MainViewComponent implements OnInit {
     this.movies[this.storedIndex].Director=this.movieDirector;
     this.movies[this.storedIndex].Poster=this.moviePoster;
     this.duplicateTitle=true;
-    Swal("Good job!", "The movie was edited!", "success")
+    Swal("Good job!", "the movie has been edited!", "success")
     }
   });
   }
@@ -149,7 +149,7 @@ export class MainViewComponent implements OnInit {
       if(webMovie.Title){
         Swal({
           type: 'error',
-          title: 'That title already exist on the internet!',
+          title: 'That title already exists on the internet!',
           text: 'Create another title',
         })
         this.duplicateTitle=true;
@@ -187,7 +187,7 @@ export class MainViewComponent implements OnInit {
    this.movies.push(this.storedMovie);
    this.autoId++;
    this.storedMovie= new Movie(null,null,null,null,null,null,null);
-   Swal("Good job!", "The movie was added!", "success")
+   Swal("Good job!", "the movie has been added!", "success")
   }
     });
   }
